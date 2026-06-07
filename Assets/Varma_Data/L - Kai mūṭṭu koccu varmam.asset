@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b112f2ad0afcf149b8bcc78fe4d9dde, type: 3}
+  m_Name: "L - Kai m\u016B\u1E6D\u1E6Du koccu varmam"
+  m_EditorClassIdentifier: 
+  pointName: "L - Kai m\u016B\u1E6D\u1E6Du koccu varmam"
+  description: Relieves wrist tension"Testing". 2
+  uiOffset: {x: 0.2, y: 0, z: 0}
+  region: 0
+  sequenceNumber: 2
