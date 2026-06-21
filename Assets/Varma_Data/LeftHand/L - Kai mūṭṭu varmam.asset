@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
+  m_Name: "L - Kai m\u016B\u1E6D\u1E6Du varmam"
+  m_EditorClassIdentifier: 
+  pointName: "L - Kai m\u016B\u1E6D\u1E6Du varmam"
+  location: Left Hand
+  description: 'Traditional Use:
+
+    Traditionally used for elbow-related discomfort
+    and to help restore normal movement of the forearm and arm.'
+  anatomyImage: {fileID: 0}

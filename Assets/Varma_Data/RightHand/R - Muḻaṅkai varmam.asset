@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b112f2ad0afcf149b8bcc78fe4d9dde, type: 3}
+  m_Name: "R - Mu\u1E3Ba\u1E45kai varmam"
+  m_EditorClassIdentifier: 
+  pointName: "R - Mu\u1E3Ba\u1E45kai varmam"
+  description: 'Traditional Use:
+
+    Believed to support forearm function and muscular
+    balance. Often used when there is discomfort or reduced movement in the forearm.'
+  uiOffset: {x: 0.2, y: 0, z: 0}
+  region: 1
+  sequenceNumber: 5
