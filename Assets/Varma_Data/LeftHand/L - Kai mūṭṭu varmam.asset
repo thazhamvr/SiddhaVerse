@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
   m_Name: "L - Kai m\u016B\u1E6D\u1E6Du varmam"
   m_EditorClassIdentifier: 
-  pointName: "L - Kai m\u016B\u1E6D\u1E6Du varmam"
+  pointName: "Kai M\u016B\u1E6D\u1E6Du Varmam"
   location: Left Hand
   description: 'Traditional Use:
 
     Traditionally used for elbow-related discomfort
     and to help restore normal movement of the forearm and arm.'
-  anatomyImage: {fileID: 0}
+  anatomyImage: {fileID: 21300000, guid: de06fea2b3561b34496d38ce969ec2a1, type: 3}

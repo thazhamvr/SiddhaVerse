@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: f4636d960577ee34098037ab0358d46a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor Ring_3
+    second: {fileID: 2100000, guid: 1d09eff4357a43c4fb6addb4e8ac2139, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor Ring_5
+    second: {fileID: 2100000, guid: 153108fecfd03c148987c5ae18d21dbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor_Center
+    second: {fileID: 2100000, guid: 0669a61160d6a3d48b9bb85fcfb44748, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Display Panel
+    second: {fileID: 2100000, guid: 9723329bb449774478a5a4d1478ab33d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Display Panel_Two
+    second: {fileID: 2100000, guid: 30cd2a8ad7db16446bbe2df1d4cae755, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor
+    second: {fileID: 2100000, guid: b046e7a6d7633144db3b3f16b1c57804, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor Ring
+    second: {fileID: 2100000, guid: 51ea4387f2a25ad49bba18771bc9bb01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Floor Ring_2
+    second: {fileID: 2100000, guid: efc6e2db18c605d4db554855a5c9a97a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Selling_Six
+    second: {fileID: 2100000, guid: 9c470c0e8c037cd49a05158ec2d75248, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Selling_Two
+    second: {fileID: 2100000, guid: 590bace293811214b8f9f560c7a8c190, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Selling_one
+    second: {fileID: 2100000, guid: 64b50bc9765d24a4981dd97c66064ee4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone Frame
+    second: {fileID: 2100000, guid: 3bd9a5048c4fff149abc8c5d37b0da1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone Frame_Center
+    second: {fileID: 2100000, guid: b71dd1ed8e1937645afef5e18e63b457, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Stone Frame_Two
+    second: {fileID: 2100000, guid: d40ad702286cad444bbdea71d1c450bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall
+    second: {fileID: 2100000, guid: 4f709af26052f9b4887481355eecccce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_1
+    second: {fileID: 2100000, guid: 731a076d969f3d849a549b0b2d5fbffb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_2
+    second: {fileID: 2100000, guid: 3f47240b0cb3ea345a9a05afbf64c2aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_3
+    second: {fileID: 2100000, guid: 79c906535d84d384fb79a778b9745689, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_4
+    second: {fileID: 2100000, guid: abfd3a0b13dad7540b2ee790909d741d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_5
+    second: {fileID: 2100000, guid: 673cf0e950fb45248b37604691a3a4f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_6
+    second: {fileID: 2100000, guid: 89c9b4e2163908b44b85781a30b7298d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_7
+    second: {fileID: 2100000, guid: f83c58abbb89ec240a2ed3e1ad8f6076, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_8
+    second: {fileID: 2100000, guid: 81680616520b4e94280b71b8db9ddf90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wall_Tiles_two_4
+    second: {fileID: 2100000, guid: 91f62d6a65ebb604d8bf631d070ac83f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 11b030d31a03a8c49a001eb3ec652a0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Center
+    second: {fileID: 2100000, guid: c7137bc8f22555145b7ebbfcfb42185d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Emmision_Five
+    second: {fileID: 2100000, guid: ef34d83c0106ff5429faedb750398602, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Emmision_Four
+    second: {fileID: 2100000, guid: 9efff8a52d99b15478f5714fc3e58355, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Emmision_One
+    second: {fileID: 2100000, guid: 0d73aba0e44ca0b4b9acbc0cc6b8d163, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Emmision_Three
+    second: {fileID: 2100000, guid: fff3e20a64186b24cbda761cf56980ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Five
+    second: {fileID: 2100000, guid: ab23009c64852514eb95e4522e26f4b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Four
+    second: {fileID: 2100000, guid: 966872f3625d8c54b9c70f6b0b6e8e4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Selling_Three
+    second: {fileID: 2100000, guid: 5075e20b5c678ac4ab90b41121f21d72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall Terminal
+    second: {fileID: 2100000, guid: 869e9ac8216160240bd6d937e3dc903b, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 19, 2026, 07_04_43 PM
+    second: {fileID: 2800000, guid: 40ad3ed9decaec74b84be326cc6ea851, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 19, 2026, 07_43_17 PM
+    second: {fileID: 2800000, guid: 2bc67ef14129844429d56dcc2b2b000b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 19, 2026, 07_53_16 PM
+    second: {fileID: 2800000, guid: 0f16dac13cd665f49ace92986f05bb6b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 19, 2026, 07_56_17 PM
+    second: {fileID: 2800000, guid: 4c47e093055a5684283e14ce826b90da, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 19, 2026, 08_09_57 PM
+    second: {fileID: 2800000, guid: bb94016e9f60b2b4cab90ecbd3fd53a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 19, 2026, 08_33_15 PM
+    second: {fileID: 2800000, guid: 62b5a7b7ea1645146a511939f0ffcce7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 20, 2026, 01_08_44 PM
+    second: {fileID: 2800000, guid: fbc1385779c93e34c9ab6d9f1b1e5ecc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChatGPT Image Jun 20, 2026, 09_59_46 AM
+    second: {fileID: 2800000, guid: ad3d5221d2d0bc94a98da2ca92da3ea8, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 1
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
