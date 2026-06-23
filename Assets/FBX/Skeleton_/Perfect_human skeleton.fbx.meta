@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: df5aa8514a8fce349a301c2607942986
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Diafragma
+    second: {fileID: 2100000, guid: 7e855397a3c52f44087bbd61a203aa2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Eye_Eye_0
+    second: {fileID: 2100000, guid: 972de470d8b48f547b5a41ce4c79b20b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Hands_Hands_0
+    second: {fileID: 2100000, guid: b41608bad88608d4497d41478add0d90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Legs_Legs_0
+    second: {fileID: 2100000, guid: 485e07782f477f0439c6dd05988576a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Pelvis_Pelvis_0
+    second: {fileID: 2100000, guid: 8eeb899736918c34ebe8eb0cb90a5127, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Ribs
+    second: {fileID: 2100000, guid: 430f292759910994c837cdf0fd45e209, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Skull_Skull_0
+    second: {fileID: 2100000, guid: 8e58fc60e618a5d4abef526ed910b63e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Spine_Spine_0
+    second: {fileID: 2100000, guid: 595c0bc952b3b6f489a06294baa135ea, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 04b68e58dcc5425ca0902c9bba95e904_RGB_Skull_Albedo
+    second: {fileID: 2800000, guid: ab693b7790a322345ae22afcaad05e75, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 121eadc86eeb472899abb7a6e8c4df64_R_Pelvis_Roughness
+    second: {fileID: 2800000, guid: 6ef5509324f875141bd553f97887352a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1ee5c400095e416aa32a0a35b03eaf3c_R_eye_Opacity
+    second: {fileID: 2800000, guid: e53e97771edc4304bbd1399d1e60659d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 1ff83bfcfa4640a48a47098549625b6d_R_eye_Roughness
+    second: {fileID: 2800000, guid: afb90803720dfe7488926ae605e2e257, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 30cf824adaf3463ca0873ccdd106f4cc_R_Hands_Roughness
+    second: {fileID: 2800000, guid: 63eeafba481ec24469b9639a16b85366, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 64c67ca276ba4227ba0f88fe956693f1_RGB_eye_Albedo
+    second: {fileID: 2800000, guid: 5eb5bcfbd805b7341a70acd6267ba49e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 9511278ec8864684ab793e67b2b2b9fe_RGB_Hands_Albedo
+    second: {fileID: 2800000, guid: aae4d80a7db813a4f8d194d706be040b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: a4050412a10c4b66a5aebe47a73695aa_R_Ribcage_Roughness
+    second: {fileID: 2800000, guid: bd4f806bcd6c19c4e8a81321abb47c8c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: b0df1234199c436baf86072596cd4b0c_RGB_Ribcage_Albedo
+    second: {fileID: 2800000, guid: b50619bba356d11428ba1b553f7454c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: b4036b2b8ede40e2808d419662a03656_RGB_Legs_Albedo
+    second: {fileID: 2800000, guid: 8d344a77335c0b445b6c9255063bf348, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bf0a189ca3fe4c11bbf2a23085f40140_R_Spine_Roughness
+    second: {fileID: 2800000, guid: 54816c929a3cce84fa26a0e504c39592, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cd0df4747e7244f4b7e89dcefb7cef3d_RGB_Pelvis_Albedo
+    second: {fileID: 2800000, guid: 8e6b693d76ce21e439ad0b8d5e290613, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: d73a7e3f94234ab3a6afbca80e79ae3d_R_Skull_Roughness
+    second: {fileID: 2800000, guid: cfc8edbcc4f5de449b65cd3c58ff6e82, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dc12894f6d24457f8851b47ba015b262_R_Legs_Roughness
+    second: {fileID: 2800000, guid: 33d289994ae97574b90ae3c60faca6b7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: e996d14b78604e52af341bf92e944d87_RGB_Spine_Albedo
+    second: {fileID: 2800000, guid: c3ff3019d0b3e03488ce47bbaa711f0b, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
