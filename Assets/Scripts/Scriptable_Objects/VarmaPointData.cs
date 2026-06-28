@@ -4,8 +4,13 @@ using UnityEngine;
 public class VarmaPointData : ScriptableObject
 {
     public string pointName;
-    public string location;
+
     [TextArea(3, 10)]
     public string description;
+
     public Sprite anatomyImage;
+
+    // --- ADD THESE TWO LINES FOR THE TABLET FILTERING ---
+    public enum BodyRegion { Head, RightArm, LeftArm, Torso, LeftLeg, RightLeg }
+    public BodyRegion region;
 }

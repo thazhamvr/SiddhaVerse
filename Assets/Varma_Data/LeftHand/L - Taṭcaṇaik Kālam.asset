@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: "L - Ta\u1E6Dca\u1E47aik K\u0101lam"
   m_EditorClassIdentifier: 
   pointName: "Ta\u1E6Dca\u1E47aik K\u0101lam"
-  location: Left Hand
-  description: 'Traditional Use:
-
-    This palm point is traditionally associated
-    with improving hand function and relieving tension within the palm.
+  description: 'This palm point is traditionally associated with improving hand function
+    and relieving tension within the palm.
 
 '
-  anatomyImage: {fileID: 21300000, guid: a3cafd68e565b9a4c8804d39f64110d7, type: 3}
+  anatomyImage: {fileID: 21300000, guid: 63b6f34705c5c9f45bc014fbccfc3e30, type: 3}
+  region: 2

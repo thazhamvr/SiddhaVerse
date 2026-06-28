@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: "L - Kai Cu\u1E37ukku Varmam"
   m_EditorClassIdentifier: 
   pointName: "Kai Cu\u1E37ukku Varmam"
-  location: Left Hand
-  description: 'Traditional Use:
-
-    This point is traditionally stimulated to help
-    relieve stiffness and discomfort in the upper arm. Practitioners use it to support
-    arm mobility and muscular relaxation.'
-  anatomyImage: {fileID: 21300000, guid: 2c4d399c64881a54e92b5ee01f42b031, type: 3}
+  description: This point is traditionally stimulated to help relieve stiffness and
+    discomfort in the upper arm. Practitioners use it to support arm mobility and
+    muscular relaxation.
+  anatomyImage: {fileID: 21300000, guid: 6486588da9f34ab4db6a4e156fc292c3, type: 3}
+  region: 2

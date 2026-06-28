@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: "L - Ma\u1E47ikka\u1E6D\u1E6Du Varmam"
   m_EditorClassIdentifier: 
   pointName: "Ma\u1E47ikka\u1E6D\u1E6Du Varmam"
-  location: Left Hand
-  description: 'Traditional Use:
-
-    Stimulated to help maintain wrist flexibility
-    and reduce discomfort around the wrist joint.'
+  description: Stimulated to help maintain wrist flexibility and reduce discomfort
+    around the wrist joint.
   anatomyImage: {fileID: 21300000, guid: 48198fd7a0e1d5d4eb03fd22a4e9fdb4, type: 3}
+  region: 2

@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: L - Kai Koccu varmam
   m_EditorClassIdentifier: 
   pointName: Kai Koccu Varmam
-  location: 'Left Hand '
-  description: 'Traditional Use:
-
-    Traditionally used for discomfort around the
-    shoulder and upper arm region. It is believed to help improve the free movement
-    of the arm.'
-  anatomyImage: {fileID: 21300000, guid: a10b2a7f47f35a145858796f43868592, type: 3}
+  description: Traditionally used for discomfort around the shoulder and upper arm
+    region. It is believed to help improve the free movement of the arm.
+  anatomyImage: {fileID: 21300000, guid: fb510ff9f788bb04a9188059cd739f5e, type: 3}
+  region: 2

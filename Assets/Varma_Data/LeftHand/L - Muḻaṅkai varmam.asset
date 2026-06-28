@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: "L - Mu\u1E3Ba\u1E45kai varmam"
   m_EditorClassIdentifier: 
   pointName: "Mu\u1E3Ba\u1E45kai Varmam"
-  location: Left Hand
-  description: 'Traditional Use:
-
-    Believed to support forearm function and muscular
-    balance. Often used when there is discomfort or reduced movement in the forearm.
+  description: 'Believed to support forearm function and muscular balance. Often
+    used when there is discomfort or reduced movement in the forearm.
 
 '
-  anatomyImage: {fileID: 21300000, guid: 63428e33b3a7e064b9b62dbf5f52c0fa, type: 3}
+  anatomyImage: {fileID: 21300000, guid: 5292d96bcabe7d644ba049fd71eac601, type: 3}
+  region: 2

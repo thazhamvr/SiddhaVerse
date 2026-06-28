@@ -74,6 +74,29 @@ public class AnatomyLayerController : MonoBehaviour
         UpdateVisuals();
     }
 
+    // --- NEW: Tablet Shortcut Functions (Forces Transparency ON instantly) ---
+
+    public void SetSkinTransparent()
+    {
+        currentLayer = 1;
+        isTransparent = true; // Automatically makes it a hologram!
+        UpdateVisuals();
+    }
+
+    public void SetMuscleTransparent()
+    {
+        currentLayer = 2;
+        isTransparent = true; // Automatically makes it a hologram!
+        UpdateVisuals();
+    }
+
+    public void SetBoneTransparent()
+    {
+        currentLayer = 3;
+        isTransparent = true; // Automatically makes it a hologram!
+        UpdateVisuals();
+    }
+
     // Triggered by your Transparent Button
     public void ToggleTransparency()
     {

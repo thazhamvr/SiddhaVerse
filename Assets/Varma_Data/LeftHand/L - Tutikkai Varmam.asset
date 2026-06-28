@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: L - Tutikkai Varmam
   m_EditorClassIdentifier: 
   pointName: Tutikkai Varmam
-  location: Left Hand
-  description: 'Traditional Use:
-
-    Considered an important hand varmam point.
-    Traditionally used to support wrist function and improve coordination of hand
-    movements.'
-  anatomyImage: {fileID: 21300000, guid: 23cb07e3980915f4691b98951f92780c, type: 3}
+  description: Considered an important hand varmam point. Traditionally used to support
+    wrist function and improve coordination of hand movements.
+  anatomyImage: {fileID: 21300000, guid: de66718291c25c149a233df5dc2158c4, type: 3}
+  region: 2

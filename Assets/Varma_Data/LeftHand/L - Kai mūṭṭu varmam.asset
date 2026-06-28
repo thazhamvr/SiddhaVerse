@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: "L - Kai m\u016B\u1E6D\u1E6Du varmam"
   m_EditorClassIdentifier: 
   pointName: "Kai M\u016B\u1E6D\u1E6Du Varmam"
-  location: Left Hand
-  description: 'Traditional Use:
-
-    Traditionally used for elbow-related discomfort
-    and to help restore normal movement of the forearm and arm.'
-  anatomyImage: {fileID: 21300000, guid: de06fea2b3561b34496d38ce969ec2a1, type: 3}
+  description: Traditionally used for elbow-related discomfort and to help restore
+    normal movement of the forearm and arm.
+  anatomyImage: {fileID: 21300000, guid: 95f39d5bf9f32de438c28d4575d19f44, type: 3}
+  region: 2

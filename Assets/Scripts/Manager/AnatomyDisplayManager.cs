@@ -6,7 +6,7 @@ public class AnatomyDisplayManager : MonoBehaviour
 {
     [Header("UI Slots")]
     public TextMeshProUGUI titleText;
-    public TextMeshProUGUI locationText;
+    //public TextMeshProUGUI locationText;
     public TextMeshProUGUI descriptionText;
     public Image anatomyImageRef;
 
@@ -16,7 +16,7 @@ public class AnatomyDisplayManager : MonoBehaviour
         if (data == null) return;
 
         titleText.text = data.pointName;
-        locationText.text = data.location;
+        //locationText.text = data.location;
         descriptionText.text = data.description;
 
         // Turn the image on if we have one, off if we don't
