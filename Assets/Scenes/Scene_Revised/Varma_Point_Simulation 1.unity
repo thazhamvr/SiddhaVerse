@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 152398665}
   - component: {fileID: 152398664}
   m_Layer: 0
-  m_Name: Right_Leg (2)
+  m_Name: "Ma\u1E47ikka\u1E6D\u1E6Du Varmam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2304,6 +2304,10 @@ PrefabInstance:
       value: Environment_Room
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f4636d960577ee34098037ab0358d46a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f4636d960577ee34098037ab0358d46a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2592,7 +2596,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -2786,7 +2790,7 @@ GameObject:
   - component: {fileID: 354271638}
   - component: {fileID: 354271637}
   m_Layer: 0
-  m_Name: Right_Leg
+  m_Name: "Kai Ne\u1E6Duvirala\u1E6Di Varmam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2856,13 +2860,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetBoneLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 319380085}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3340,7 +3344,7 @@ GameObject:
   - component: {fileID: 444973261}
   - component: {fileID: 444973260}
   m_Layer: 0
-  m_Name: Left_Leg (1)
+  m_Name: Kai Peruviral Maiya Varmam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3410,13 +3414,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetBoneLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 305412310}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3892,7 +3896,7 @@ GameObject:
   - component: {fileID: 512700910}
   - component: {fileID: 512700909}
   m_Layer: 0
-  m_Name: Right_Hand (2)
+  m_Name: "Ta\u1E6Dca\u1E47aik K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3962,13 +3966,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetMuscleLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1373904045}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4442,21 +4446,21 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1730996530}
-  - {fileID: 1811616541}
   - {fileID: 1860383663}
   - {fileID: 1922251279}
   - {fileID: 1751149023}
+  - {fileID: 1811616541}
   - {fileID: 1121307619}
   - {fileID: 1354049033}
-  - {fileID: 444973259}
-  - {fileID: 354271636}
-  - {fileID: 1439903369}
-  - {fileID: 152398663}
   - {fileID: 1457122388}
-  - {fileID: 2090919812}
-  - {fileID: 512700908}
+  - {fileID: 354271636}
+  - {fileID: 152398663}
   - {fileID: 680393526}
+  - {fileID: 444973259}
   - {fileID: 658499384}
+  - {fileID: 2090919812}
+  - {fileID: 1439903369}
+  - {fileID: 512700908}
   m_Father: {fileID: 55769297}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4540,7 +4544,7 @@ GameObject:
   - component: {fileID: 658499386}
   - component: {fileID: 658499385}
   m_Layer: 0
-  m_Name: Left_Hand (2)
+  m_Name: "Kai Ka\u1E47\u1E47u Varmam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4610,13 +4614,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetSkinLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 860664994}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4807,7 +4811,7 @@ GameObject:
   - component: {fileID: 680393528}
   - component: {fileID: 680393527}
   m_Layer: 0
-  m_Name: Left_Hand (1)
+  m_Name: "Mu\u1E3Ba\u1E45kai Varmam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4877,13 +4881,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetSkinLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 933823955200759541}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5102,7 +5106,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5979,10 +5983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'RIGHT HAND
-
-
-'
+  m_text: "Kai M\u016B\u1E6D\u1E6Du Varmam\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -6009,13 +6010,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6383,7 +6384,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938525552}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6391,7 +6392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -20}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938525554
@@ -6414,10 +6415,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'RIGHT LEG
-
-
-'
+  m_text: "Kai Ne\u1E6Duvirala\u1E6Di Varmam"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -6444,8 +6442,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6981,7 +6979,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001645973
@@ -7004,10 +7002,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'RIGHT HAND
-
-
-'
+  m_text: "Kai Kavu\u1E37i Varmam"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -7034,13 +7029,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -8363,7 +8358,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188126811
@@ -8386,10 +8381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'RIGHT HAND
-
-
-'
+  m_text: "Ta\u1E6Dca\u1E47aik K\u0101lam"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -8416,8 +8408,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8717,7 +8709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1282533411
@@ -8740,10 +8732,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'RIGHT LEG
-
-
-'
+  m_text: Tutikkai Varmam
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -8770,13 +8759,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -9027,9 +9016,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LEFT HAND
-
-'
+  m_text: "Kai Ka\u1E47\u1E47u Varmam"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -9056,13 +9043,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -10332,7 +10319,7 @@ GameObject:
   - component: {fileID: 1439903371}
   - component: {fileID: 1439903370}
   m_Layer: 0
-  m_Name: Right_Leg (1)
+  m_Name: Tutikkai Varmam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10402,13 +10389,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetBoneLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 8167961747697965733}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10465,7 +10452,7 @@ GameObject:
   - component: {fileID: 1457122390}
   - component: {fileID: 1457122389}
   m_Layer: 0
-  m_Name: Right_Hand
+  m_Name: "Kai M\u016B\u1E6D\u1E6Du Varmam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10535,13 +10522,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetMuscleLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 5197440525632660089}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -10642,7 +10629,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LEFT LEG
+  m_text: Kai Peruviral Maiya Varmam
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -10669,13 +10656,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -13716,9 +13703,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'LEFT HAND
-
-'
+  m_text: "Mu\u1E3Ba\u1E45kai Varmam"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -13745,13 +13730,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -14180,7 +14165,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: -20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1928463974
@@ -14203,10 +14188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'RIGHT LEG
-
-
-'
+  m_text: "Ma\u1E47ikka\u1E6D\u1E6Du Varmam"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
@@ -14233,13 +14215,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -14853,7 +14835,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -15317,7 +15299,7 @@ GameObject:
   - component: {fileID: 2090919814}
   - component: {fileID: 2090919813}
   m_Layer: 0
-  m_Name: Right_Hand (1)
+  m_Name: "Kai Kavu\u1E37i Varmam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15387,13 +15369,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1799369692}
-        m_TargetAssemblyTypeName: AnatomyLayerController, Assembly-CSharp
-        m_MethodName: SetMuscleLayer
-        m_Mode: 1
+      - m_Target: {fileID: 655931349}
+        m_TargetAssemblyTypeName: VarmaSelectionManager, Assembly-CSharp
+        m_MethodName: OnVarmaButtonPressed
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 689255701}
+          m_ObjectArgumentAssemblyTypeName: VarmaPointSender, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
