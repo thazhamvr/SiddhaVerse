@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
-  m_Name: L - Kai Koccu varmam
+  m_Name: "4_Pi\u1E6Dari Varmam"
   m_EditorClassIdentifier: 
-  pointName: Kai Koccu Varmam
-  description: Traditionally used for discomfort around the shoulder and upper arm
-    region. It is believed to help improve the free movement of the arm.
+  pointName: "Pi\u1E6Dari Varmam "
+  location: Junction of posterior aspect of neck and head, over External occipital
+    protuberance.
+  description: "N\u0101kki\u1E5Fku cuvaiyai u\u1E47arttum (Enhances the sense of
+    taste), M\u016Bkki\u1E5Fku ma\u1E47attai u\u1E47arttum (Improves the sense of
+    smell), N\u0101kki\u1E5Fkup p\u0113sum \u0101\u1E5F\u1E5Falai tarum (supports
+    speech ability)."
   anatomyImage: {fileID: 21300000, guid: fb510ff9f788bb04a9188059cd739f5e, type: 3}
-  region: 2
+  classification: 0

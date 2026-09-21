@@ -1,30 +1,35 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic; // Needed for arrays
 
 public class VarmaPointSender : MonoBehaviour
 {
     [Header("Data Card")]
     public VarmaPointData myDataCard;
 
-    // We changed this to an Array to hold multiple spheres!
     private Renderer[] allRenderers;
     private Coroutine blinkRoutine;
     private Color originalColor;
-    private Vector3 originalScale;
+    private Vector3[] originalScales; // Now an Array to hold the size of EVERY individual sphere
 
     void Awake()
     {
         // Find EVERY sphere inside this parent object
         allRenderers = GetComponentsInChildren<Renderer>(true);
+        originalScales = new Vector3[allRenderers.Length];
 
-        // Grab the original color from the first sphere we find
+        for (int i = 0; i < allRenderers.Length; i++)
+        {
+            if (allRenderers[i] != null)
+            {
+                // Memorize the exact starting size of each individual child
+                originalScales[i] = allRenderers[i].transform.localScale;
+            }
+        }
+
         if (allRenderers.Length > 0 && allRenderers[0] != null)
         {
             originalColor = allRenderers[0].material.color;
         }
-
-        originalScale = transform.localScale;
     }
 
     public void SetVisible(bool visible)
@@ -47,30 +52,55 @@ public class VarmaPointSender : MonoBehaviour
         if (blinkRoutine != null) StopCoroutine(blinkRoutine);
 
         SetAlpha(1f);
-        transform.localScale = originalScale;
+
+        // Reset ALL spheres to their individual normal sizes
+        for (int i = 0; i < allRenderers.Length; i++)
+        {
+            if (allRenderers[i] != null)
+            {
+                allRenderers[i].transform.localScale = originalScales[i];
+            }
+        }
     }
 
     private IEnumerator BlinkSequence()
     {
-        Vector3 smallScale = originalScale * 0.6f;
-
         while (true)
         {
+            // Shrink and Fade Out
             float t = 0f;
             while (t < 1f)
             {
                 t += Time.deltaTime * 3.5f;
                 SetAlpha(Mathf.Lerp(1f, 0.1f, t));
-                transform.localScale = Vector3.Lerp(originalScale, smallScale, t);
+
+                // Shrink each child sphere in its own position
+                for (int i = 0; i < allRenderers.Length; i++)
+                {
+                    if (allRenderers[i] != null)
+                    {
+                        Vector3 smallScale = originalScales[i] * 0.6f;
+                        allRenderers[i].transform.localScale = Vector3.Lerp(originalScales[i], smallScale, t);
+                    }
+                }
                 yield return null;
             }
 
+            // Grow and Fade In
             t = 0f;
             while (t < 1f)
             {
                 t += Time.deltaTime * 3.5f;
                 SetAlpha(Mathf.Lerp(0.1f, 1f, t));
-                transform.localScale = Vector3.Lerp(smallScale, originalScale, t);
+
+                for (int i = 0; i < allRenderers.Length; i++)
+                {
+                    if (allRenderers[i] != null)
+                    {
+                        Vector3 smallScale = originalScales[i] * 0.6f;
+                        allRenderers[i].transform.localScale = Vector3.Lerp(smallScale, originalScales[i], t);
+                    }
+                }
                 yield return null;
             }
         }
@@ -82,7 +112,6 @@ public class VarmaPointSender : MonoBehaviour
         Color c = originalColor;
         c.a = alpha;
 
-        // Loop through EVERY sphere in the group and change its color!
         foreach (Renderer r in allRenderers)
         {
             if (r == null) continue;

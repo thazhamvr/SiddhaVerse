@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
-  m_Name: "L - Kai m\u016B\u1E6D\u1E6Du koccu varmam"
+  m_Name: "5_U\u1E5Fakka K\u0101lam Varmam"
   m_EditorClassIdentifier: 
-  pointName: "Kai M\u016B\u1E6D\u1E6Du Koccu Varmam"
-  description: This point is stimulated to support elbow flexibility and reduce stiffness
-    around the elbow joint.
+  pointName: "U\u1E5Fakka K\u0101lam Varmam"
+  location: "Situated 3 finger breadth below the chin and 2 finger breadth superolateral
+    to thyroid cartilage (Adam\u2019s apple)."
+  description: "T\u016Bkk(a) u\u1E47arvai \u0113\u1E5Fpa\u1E6Duttum (Promotes relaxation
+    and sleep)."
   anatomyImage: {fileID: 21300000, guid: 7812979da68e86346bef5e56a4a642c9, type: 3}
-  region: 2
+  classification: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
+  m_Name: "2_Na\u1E6Dcattira Varmam"
+  m_EditorClassIdentifier: 
+  pointName: "Na\u1E6Dcattira Varmam"
+  location: On the lateral border (canthus) of the eye.
+  description: "P\u0101rvai-pula\u1E49 o\u1E3Bu\u1E45k\u0101kum (enhances the sense
+    of vision),  U\u1E6Dal c\u016B\u1E6D\u1E6Dai o\u1E3Bu\u1E45ku ceyyum (regulates
+    body heat), Ka\u1E47 narampuka\u1E37ukku valuvo\u1E6D\u1E6Dum (strengthens the
+    eye nerves),  M\u0101\u1E5Fuka\u1E47 ku\u1E47ama\u1E6Daiyum (helps improve strabismus)."
+  anatomyImage: {fileID: 21300000, guid: fc9fe747fb71b8e478fb418593fac9d1, type: 3}
+  classification: 0

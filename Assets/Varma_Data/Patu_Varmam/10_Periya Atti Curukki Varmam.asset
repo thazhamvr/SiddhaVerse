@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
-  m_Name: "L - Mu\u1E3Ba\u1E45kai varmam"
+  m_Name: 10_Periya Atti Curukki Varmam
   m_EditorClassIdentifier: 
-  pointName: "Mu\u1E3Ba\u1E45kai Varmam"
-  description: 'Believed to support forearm function and muscular balance. Often
-    used when there is discomfort or reduced movement in the forearm.
-
-'
+  pointName: Periya Atti Curukki Varmam
+  location: Two finger breadth below the 11th floating rib.
+  description: "\u1E49a u\u1E5Fuppuc c\u0101rnta ku\u1E5Faip\u0101\u1E6Du n\u012B\u1E45kum
+    (helps relieve reproductive system-related disorders), Vint(u) a\u1E47ukka\u1E37i\u1E49
+    ta\u1E49maiyai o\u1E3Bu\u1E45kupa\u1E6Duttum (regulates the quality of sperm
+    cells)."
   anatomyImage: {fileID: 21300000, guid: 5292d96bcabe7d644ba049fd71eac601, type: 3}
-  region: 2
+  classification: 0

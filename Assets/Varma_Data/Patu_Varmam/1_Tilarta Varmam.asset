@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
+  m_Name: 1_Tilarta Varmam
+  m_EditorClassIdentifier: 
+  pointName: Tilarta Varmam
+  location: " \xBD inch below the midpoint of glabella which is an elevation in between
+    the supercillary arch situated just above the supraorbital margin.  "
+  description: "Ni\u1E49aiv\u0101\u1E5F\u1E5Fal perukum (enhances memory),  Aimpo\u1E5Fika\u1E37um
+    m\u016B\u1E37aiy\u014D\u1E6Du to\u1E6Darpai \u0113\u1E5Fpa\u1E6Duttum (connects
+    all five senses with the brain),  Ma\u1E49am, Cittam, Putti, Aka\u1E45k\u0101ram
+    \u0101kiya Antakkara\u1E47am n\u0101\u1E45kaiyum sama\u1E49 ceyyum (balances
+    the four inner faculties \u2014 mind, consciousness, intellect, and ego)."
+  anatomyImage: {fileID: 21300000, guid: 6486588da9f34ab4db6a4e156fc292c3, type: 3}
+  classification: 0

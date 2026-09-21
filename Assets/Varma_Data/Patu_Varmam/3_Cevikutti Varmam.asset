@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7232163a1745a4aa1300c15e2f57ab, type: 3}
+  m_Name: 3_Cevikutti Varmam
+  m_EditorClassIdentifier: 
+  pointName: Cevikutti Varmam
+  location: Near the tragus of Ear.
+  description: "M\u016B\u1E37aikku iratta \u014D\u1E6D\u1E6Dattaic c\u012Br\u0101kkum
+    (regulates blood circulation to the brain), N\u014Dy etirppu caktiyai atikarikkum
+    (boosts immunity), Talaiccu\u1E5F\u1E5Fal ku\u1E47am\u0101kum (relieves dizziness),
+    K\u0101tuka\u1E37ukku \u0101\u1E5F\u1E5Falai tarum (helps improve ear function),
+    Ma\u1E49am, Cittam, Putti, Aka\u1E45k\u0101ram \u0101kiya Antakkara\u1E47am n\u0101\u1E45kaiyum
+    sama\u1E49 ceyyum (balances the four inner faculties \u2014 mind, consciousness,
+    intellect, and ego). "
+  anatomyImage: {fileID: 21300000, guid: e418c2c9d8f73154e93727e02a70c0bd, type: 3}
+  classification: 0
