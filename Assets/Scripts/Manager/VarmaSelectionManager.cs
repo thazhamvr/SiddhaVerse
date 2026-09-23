@@ -5,64 +5,64 @@ using TMPro;
 public class VarmaSelectionManager : MonoBehaviour
 {
     [Header("The 12 Patu Varmam Points")]
-    [Tooltip("Drag the 12 dummy parent spheres here IN EXACT ORDER (1 to 12)")]
+    [Tooltip("Drag the 12 point senders here in exact order (Index 0 to 11)")]
     public List<VarmaPointSender> patuPoints;
 
-    [Header("Tablet UI Text References")]
-    [Tooltip("Drag the Text element from the tablet that shows the preview name")]
-    public TextMeshProUGUI tabletPointNameText;
+    [Header("TV Monitor UI Text Reference")]
+    [Tooltip("Drag the VARMA NAME Text component here")]
+    public TextMeshProUGUI varmamNameText;
 
-    [Header("External Managers")]
-    [Tooltip("Drag the object holding your AnatomyLayerController script here")]
+    [Header("External Layer Controller")]
     public AnatomyLayerController layerController;
 
-    // Internal memory to hold the user's choices before they press VIEW
     private int pendingPointIndex = -1;
-    private int pendingLayerIndex = 1; // Defaults to Skin layer (1)
+    private int pendingLayerIndex = 1; // 1 = Skin, 2 = Muscle/Nerve, 3 = Skeleton
 
-    // 1. Triggered by the Numbered Buttons (1-12)
+    // Triggered by each individual Varma Point button in the ScrollView (Pass 0 for Point 1, 1 for Point 2, etc.)
     public void StagePoint(int buttonIndex)
     {
-        Debug.Log("Button pressed! Staging Index: " + buttonIndex); // Tells us if the button works
-
         if (buttonIndex >= 0 && buttonIndex < patuPoints.Count)
         {
             pendingPointIndex = buttonIndex;
 
-            if (patuPoints[buttonIndex] == null)
+            if (patuPoints[buttonIndex] != null && patuPoints[buttonIndex].myDataCard != null)
             {
-                Debug.LogError("The sphere at index " + buttonIndex + " is missing from the Patu Points list!");
-                return;
-            }
-
-            if (tabletPointNameText != null)
-            {
-                // This logs the name it's TRYING to display
-                Debug.Log("Trying to display name: " + patuPoints[buttonIndex].myDataCard.pointName);
-                tabletPointNameText.text = patuPoints[buttonIndex].myDataCard.pointName;
+                if (varmamNameText != null)
+                {
+                    varmamNameText.text = patuPoints[buttonIndex].myDataCard.pointName;
+                }
             }
             else
             {
-                Debug.LogError("Tablet Point Name Text is missing in the Inspector!");
+                Debug.LogError("Missing point sender or data card at index: " + buttonIndex);
             }
         }
         else
         {
-            Debug.LogError("Button Index " + buttonIndex + " is out of range. Check your Patu Points list size.");
+            Debug.LogError("Button Index " + buttonIndex + " is out of range.");
         }
     }
 
-    // 2. Triggered by the Skin/Muscle/Bone buttons on the Tablet
-    public void StageLayer(int layerType)
+    // Direct methods for the 3 Layer Buttons
+    public void StageSkinLayer()
     {
-        // 1 = Skin, 2 = Muscle, 3 = Bone
-        pendingLayerIndex = layerType;
+        pendingLayerIndex = 1;
     }
 
-    // 3. Triggered by the big "VIEW" Button
+    public void StageMuscleNerveLayer()
+    {
+        pendingLayerIndex = 2;
+    }
+
+    public void StageSkeletonLayer()
+    {
+        pendingLayerIndex = 3;
+    }
+
+    // Triggered by 3D VIEW / VIEW DETAIL Button
     public void CommitView()
     {
-        // A. Apply the memorized Anatomy Layer to the Dummy
+        // 1. Set Anatomy Layer visibility
         if (layerController != null)
         {
             if (pendingLayerIndex == 1) layerController.SetSkinTransparent();
@@ -70,22 +70,20 @@ public class VarmaSelectionManager : MonoBehaviour
             else if (pendingLayerIndex == 3) layerController.SetBoneTransparent();
         }
 
-        // B. Apply the memorized Varma Point to the Dummy
+        // 2. Activate selected Varma Point sphere
         if (patuPoints == null || patuPoints.Count == 0 || pendingPointIndex == -1) return;
 
-        // Hide everything first
         foreach (VarmaPointSender point in patuPoints)
         {
             if (point != null) point.SetVisible(false);
         }
 
-        // Turn on the exact point they confirmed
         VarmaPointSender selectedPoint = patuPoints[pendingPointIndex];
         if (selectedPoint != null)
         {
             selectedPoint.SetVisible(true);
             selectedPoint.StartBlinking();
-            selectedPoint.SendData(); // Triggers AnatomyDisplayManager to show description/location on Right Canvas
+            selectedPoint.SendData();
         }
     }
 }

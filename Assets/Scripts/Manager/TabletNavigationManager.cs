@@ -2,55 +2,73 @@ using UnityEngine;
 
 public class TabletNavigationManager : MonoBehaviour
 {
-    [Header("External UI")]
-    [Tooltip("Drag your Canvas_Right_Data here")]
-    public GameObject rightDataCanvas;
+    [Header("TV Monitor Panels")]
+    [Tooltip("Drag Start_Panel here")]
+    public GameObject startPanel;
 
-    [Header("Tablet Screens (Canvases)")]
-    public GameObject mainScreenCanvas;   // Screen 1: The starting menu
-    public GameObject patuVarmamCanvas;   // Screen 2: The 12 Patu points
-    public GameObject totuVarmamCanvas;   // Screen 3: Work in progress
+    [Tooltip("Drag Home_Panel here")]
+    public GameObject homePanel;
+
+    [Tooltip("Drag Patu_Panel here")]
+    public GameObject patuPanel;
+
+    [Tooltip("Drag ViewDetail_Panel here")]
+    public GameObject viewDetailPanel;
+
+    [Header("External Side Canvases")]
+    [Tooltip("Drag Canvas_Left_Anatomy or Canvas_Right_Data here")]
+    public GameObject rightDataCanvas;
 
     void Start()
     {
-        ShowMainScreen();
+        ShowStartPanel();
     }
 
-    public void ShowMainScreen()
+    // Called by START Button on Start_Panel
+    public void ShowStartPanel()
     {
-        HideAllScreens();
-        if (mainScreenCanvas != null) mainScreenCanvas.SetActive(true);
-        if (rightDataCanvas != null) rightDataCanvas.SetActive(false); // Hide right data on home
+        HideAllPanels();
+        if (startPanel != null) startPanel.SetActive(true);
+        if (rightDataCanvas != null) rightDataCanvas.SetActive(false);
     }
 
-    public void ShowPatuVarmamScreen()
+    // Called by BACK Button or Home Button
+    public void ShowHomePanel()
     {
-        HideAllScreens();
-        if (patuVarmamCanvas != null) patuVarmamCanvas.SetActive(true);
-        if (rightDataCanvas != null) rightDataCanvas.SetActive(true); // Show right data
+        HideAllPanels();
+        if (homePanel != null) homePanel.SetActive(true);
+        if (rightDataCanvas != null) rightDataCanvas.SetActive(false);
     }
 
-    public void ShowTotuVarmamScreen()
+    // Called by PATU VARMAM Button on Home_Panel
+    public void ShowPatuVarmamPanel()
     {
-        HideAllScreens();
-        if (totuVarmamCanvas != null) totuVarmamCanvas.SetActive(true);
+        HideAllPanels();
+        if (patuPanel != null) patuPanel.SetActive(true);
         if (rightDataCanvas != null) rightDataCanvas.SetActive(true);
     }
 
-    private void HideAllScreens()
+    // Called by VIEW DETAIL Button on Patu_Panel
+    public void ShowViewDetailPanel()
     {
-        if (mainScreenCanvas != null) mainScreenCanvas.SetActive(false);
-        if (patuVarmamCanvas != null) patuVarmamCanvas.SetActive(false);
-        if (totuVarmamCanvas != null) totuVarmamCanvas.SetActive(false);
+        HideAllPanels();
+        if (viewDetailPanel != null) viewDetailPanel.SetActive(true);
+        if (rightDataCanvas != null) rightDataCanvas.SetActive(true);
     }
+
+    private void HideAllPanels()
+    {
+        if (startPanel != null) startPanel.SetActive(false);
+        if (homePanel != null) homePanel.SetActive(false);
+        if (patuPanel != null) patuPanel.SetActive(false);
+        if (viewDetailPanel != null) viewDetailPanel.SetActive(false);
+    }
+
     public void QuitApplication()
     {
-        Debug.Log("Quitting App...");
-
-        // This closes the app on your Android/XR headset
+        Debug.Log("Quitting Application...");
         Application.Quit();
 
-        // This forces the Unity Editor's "Play" button to stop so you can test it!
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
