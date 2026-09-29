@@ -18,27 +18,27 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 23d5787cab2a4080b388e7a7fc830a81_R_HumanSkin_Roughness
-    second: {fileID: 2800000, guid: c5ec2f05de9a1394bb1c6a59f6d7d6ca, type: 3}
+    second: {fileID: 2800000, guid: b0bcc4a4f0af9794a9ba70cd5c82697e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 48f7ae2f1a3a49de9010d1bdf6006369_R_Shorts_Roughness
-    second: {fileID: 2800000, guid: ca6af4cedec90a14592d4e550749cfb5, type: 3}
+    second: {fileID: 2800000, guid: f50247ee66f006e459bf307901bdd891, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 712248effea248e9974f2402fede6089_RGB_HumanSkin_BaseColor
-    second: {fileID: 2800000, guid: 0e39c7e5a4c976741a2fbdff7008d886, type: 3}
+    second: {fileID: 2800000, guid: 0b341d828d8d74e4dbe4c1315dc5779a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 8cea504da42e4525ba7725a56fa31b1f_R_HumanSkin_Opacity
-    second: {fileID: 2800000, guid: 974f26b2fd27d5a4bb43bd7cdc790933, type: 3}
+    second: {fileID: 2800000, guid: bf3038546a5b78a4c8f80279fadc2393, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: d0377be651504ec9ad54dd2107e16432_RGB_Shorts_BaseColor
-    second: {fileID: 2800000, guid: 712af8830d17ea34cb1f06f74fb3cc91, type: 3}
+    second: {fileID: 2800000, guid: 3c5b440680d254b4582ad619234d3cae, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

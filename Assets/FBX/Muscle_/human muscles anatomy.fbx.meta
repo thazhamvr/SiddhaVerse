@@ -33,42 +33,42 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 23c42a5b128149c5a031a7ff54f06006_RGB_CirculatorySystem_albedo
-    second: {fileID: 2800000, guid: 2712b2bdfd1315c4e88ca89f128b5b29, type: 3}
+    second: {fileID: 2800000, guid: 3cc50efcc064ae4409b2c6be1083f222, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 49d85a1b7369457e876337c6bd18eb4a_RGB_Muscles_MusclesPart_1_BaseColor
-    second: {fileID: 2800000, guid: 19b5ec755cf30f841a7ef26c167e9964, type: 3}
+    second: {fileID: 2800000, guid: 5e72c729869a2be4f9d0248af8aa04b8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 51e1f50916be4ee5a6e1518426d311f8_R_Muscles_MusclesPart_3_Roughness
-    second: {fileID: 2800000, guid: 1eb4c6e723eb12d4baedf23f2ce6b4ee, type: 3}
+    second: {fileID: 2800000, guid: 66fb4fc400ccb6d439bb2a181d8b5607, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 802b2a07e9b04252a78efe0c2acb72e6_RGB_Muscles_MusclesPart_2_BaseColor
-    second: {fileID: 2800000, guid: 4ab126314bd13d84484ccedae49e6f32, type: 3}
+    second: {fileID: 2800000, guid: a91b8cbd571473a4b9a33ec394e28e02, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 9cbc836c7a8d4009afba1a5985e7fb13_R_CirculatorySystem_roughness
-    second: {fileID: 2800000, guid: a919a65392d608844837edb10a05fe3e, type: 3}
+    second: {fileID: 2800000, guid: 121e9ec3222e22a41b8536d290e886a6, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: ae4ab451f4094c10b7cf599ac7aef390_RGB_Muscles_MusclesPart_3_BaseColor
-    second: {fileID: 2800000, guid: e6e9343761966884ea54739ddbccf668, type: 3}
+    second: {fileID: 2800000, guid: 6eea355dec56ab44da40d7283d3ec4d8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: d0e5566da993425cb649f8910ec14c16_R_Muscles_MusclesPart_1_Roughness
-    second: {fileID: 2800000, guid: ddb2decf703230241ab6142830d88434, type: 3}
+    second: {fileID: 2800000, guid: 61da627c8d385094caf5c90ad32c572e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: f05980d68c8d47fa93725f5577007023_R_Muscles_MusclesPart_2_Roughness
-    second: {fileID: 2800000, guid: 164439a9635f50645842848656ca8875, type: 3}
+    second: {fileID: 2800000, guid: f90aa9673989dfd408b06bc5e1fe9241, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
