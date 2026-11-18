@@ -9,11 +9,10 @@ public class VarmaPointSender : MonoBehaviour
     private Renderer[] allRenderers;
     private Coroutine blinkRoutine;
     private Color originalColor;
-    private Vector3[] originalScales; // Now an Array to hold the size of EVERY individual sphere
+    private Vector3[] originalScales;
 
     void Awake()
     {
-        // Find EVERY sphere inside this parent object
         allRenderers = GetComponentsInChildren<Renderer>(true);
         originalScales = new Vector3[allRenderers.Length];
 
@@ -21,7 +20,6 @@ public class VarmaPointSender : MonoBehaviour
         {
             if (allRenderers[i] != null)
             {
-                // Memorize the exact starting size of each individual child
                 originalScales[i] = allRenderers[i].transform.localScale;
             }
         }
@@ -53,7 +51,6 @@ public class VarmaPointSender : MonoBehaviour
 
         SetAlpha(1f);
 
-        // Reset ALL spheres to their individual normal sizes
         for (int i = 0; i < allRenderers.Length; i++)
         {
             if (allRenderers[i] != null)
@@ -67,14 +64,12 @@ public class VarmaPointSender : MonoBehaviour
     {
         while (true)
         {
-            // Shrink and Fade Out
             float t = 0f;
             while (t < 1f)
             {
                 t += Time.deltaTime * 3.5f;
                 SetAlpha(Mathf.Lerp(1f, 0.1f, t));
 
-                // Shrink each child sphere in its own position
                 for (int i = 0; i < allRenderers.Length; i++)
                 {
                     if (allRenderers[i] != null)
@@ -86,7 +81,6 @@ public class VarmaPointSender : MonoBehaviour
                 yield return null;
             }
 
-            // Grow and Fade In
             t = 0f;
             while (t < 1f)
             {
@@ -126,11 +120,16 @@ public class VarmaPointSender : MonoBehaviour
 
     public void SendData()
     {
-        AnatomyDisplayManager uiManager = FindObjectOfType<AnatomyDisplayManager>();
+        // Searches inactive objects as well so Canvas_Right_Data is always found
+        AnatomyDisplayManager uiManager = FindObjectOfType<AnatomyDisplayManager>(true);
 
         if (uiManager != null && myDataCard != null)
         {
             uiManager.DisplayVarmaData(myDataCard);
+        }
+        else
+        {
+            Debug.LogWarning("SendData failed on " + gameObject.name + " | uiManager: " + uiManager + " | myDataCard: " + myDataCard);
         }
     }
 }

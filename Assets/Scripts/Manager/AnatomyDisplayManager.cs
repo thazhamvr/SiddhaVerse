@@ -6,7 +6,6 @@ public class AnatomyDisplayManager : MonoBehaviour
 {
     [Header("UI Slots")]
     public TextMeshProUGUI titleText;
-
     public TextMeshProUGUI locationText;
 
     [Header("Additional UI Slots")]
@@ -14,31 +13,64 @@ public class AnatomyDisplayManager : MonoBehaviour
     public TextMeshProUGUI traditionalUseText;
     public TextMeshProUGUI detailedInfoText;
 
-    public TextMeshProUGUI descriptionText;
+    [Header("Main Tab Display & Image")]
+    public TextMeshProUGUI sectionHeaderText; // Dynamic_text (1) -> displays "DESCRIPTION" or "LOCATION"
+    public TextMeshProUGUI descriptionText;   // Dynamic_text -> displays description or location body text
     public Image anatomyImageRef;
+
+    private VarmaPointData currentData;
 
     public void DisplayVarmaData(VarmaPointData data)
     {
         if (data == null) return;
 
-        titleText.text = data.pointName;
+        currentData = data;
 
-        // Push the location text ONLY to the right canvas
+        if (titleText != null) titleText.text = data.pointName;
+
         if (locationText != null) locationText.text = data.location;
         if (locationDetailText != null) locationDetailText.text = data.location;
-
-        descriptionText.text = data.description;
         if (traditionalUseText != null) traditionalUseText.text = data.description;
         if (detailedInfoText != null) detailedInfoText.text = data.description;
 
-        if (data.anatomyImage != null)
+        // Defaults to Overview (Description) right after View is pressed
+        ShowOverview();
+
+        if (anatomyImageRef != null)
         {
-            anatomyImageRef.sprite = data.anatomyImage;
-            anatomyImageRef.enabled = true;
+            if (data.anatomyImage != null)
+            {
+                anatomyImageRef.sprite = data.anatomyImage;
+                anatomyImageRef.enabled = true;
+            }
+            else
+            {
+                anatomyImageRef.enabled = false;
+            }
         }
-        else
-        {
-            anatomyImageRef.enabled = false;
-        }
+    }
+
+    // Hook to OverView_btn -> OnClick()
+    public void ShowOverview()
+    {
+        if (currentData == null) return;
+
+        if (sectionHeaderText != null)
+            sectionHeaderText.text = "DESCRIPTION";
+
+        if (descriptionText != null)
+            descriptionText.text = currentData.description;
+    }
+
+    // Hook to Location_btn (1) -> OnClick()
+    public void ShowLocation()
+    {
+        if (currentData == null) return;
+
+        if (sectionHeaderText != null)
+            sectionHeaderText.text = "LOCATION";
+
+        if (descriptionText != null)
+            descriptionText.text = currentData.location;
     }
 }

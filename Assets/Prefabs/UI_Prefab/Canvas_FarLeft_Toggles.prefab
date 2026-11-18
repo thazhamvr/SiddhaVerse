@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6242722069708065110}
   - component: {fileID: 2620355936695351514}
   - component: {fileID: 1547610121509693108}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,8 +74,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 8293899291438270883}
   - component: {fileID: 5878075783080718186}
   - component: {fileID: 4050307123295884714}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "2.Na\u1E6Dcattirak k\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583553255714128996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.001490224}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -172,7 +172,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6817419823562622630
 CanvasRenderer:
@@ -294,7 +294,7 @@ GameObject:
   - component: {fileID: 8502755743866351334}
   - component: {fileID: 2159337514874024841}
   - component: {fileID: 9192730820335273267}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -357,8 +357,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 1550510768972636327}
   - component: {fileID: 8680823199181516348}
   - component: {fileID: 6390810631488517825}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: AllVarma_ScrollView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -508,7 +508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 5506380515726400361}
-  m_Horizontal: 1
+  m_Horizontal: 0
   m_Vertical: 1
   m_MovementType: 1
   m_Elasticity: 0.1
@@ -536,7 +536,7 @@ GameObject:
   - component: {fileID: 6002961746963283062}
   - component: {fileID: 8512268224161347473}
   - component: {fileID: 3494706708628167113}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -599,8 +599,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 2969634661097559374}
   - component: {fileID: 7335836311361751339}
   - component: {fileID: 440088156718786160}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "12.Kalli\u1E6Dai K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -687,7 +687,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2492930686937274237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -697,7 +697,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4128218426412147298
 CanvasRenderer:
@@ -928,7 +928,7 @@ GameObject:
   - component: {fileID: 1831974307152882559}
   - component: {fileID: 111355928706898178}
   - component: {fileID: 8391579651510524505}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "1.Tilartta k\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -953,7 +953,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2252138619380352358
 CanvasRenderer:
@@ -1075,7 +1075,7 @@ GameObject:
   - component: {fileID: 4456750354007181746}
   - component: {fileID: 2480130551838437639}
   - component: {fileID: 5418656814068126500}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1138,8 +1138,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1211,7 +1211,7 @@ GameObject:
   - component: {fileID: 1529406537125511273}
   - component: {fileID: 5441224858350192025}
   - component: {fileID: 5892061850421807312}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "5.U\u1E5Fakka K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3335615317896879661}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1236,7 +1236,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2324754577277744363
 CanvasRenderer:
@@ -1360,7 +1360,7 @@ GameObject:
   - component: {fileID: 3161946429262931861}
   - component: {fileID: 5743384984694847684}
   - component: {fileID: 2135040122981684992}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "4.Pi\u1E6Darikk\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1375,7 +1375,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3518691950210721038}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.005960896}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1385,7 +1385,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7592716946798774693
 CanvasRenderer:
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 996286486342214543}
   - component: {fileID: 2730530648599063517}
   - component: {fileID: 9221158604091857358}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "10.Periya Atti Curukki  K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1524,7 +1524,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4047043607464686645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1534,7 +1534,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6314713118117305282
 CanvasRenderer:
@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 2956188248250265779}
   - component: {fileID: 9032316274871024462}
   - component: {fileID: 7843671907541997194}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1733,7 +1733,7 @@ GameObject:
   - component: {fileID: 7274222445707680002}
   - component: {fileID: 2707112106111509859}
   - component: {fileID: 7365507252130971743}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "9.U\u1E5Fumi K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1748,7 +1748,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4169168895223457648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1758,7 +1758,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2811363073456724262
 CanvasRenderer:
@@ -1881,7 +1881,7 @@ GameObject:
   - component: {fileID: 683476534204796395}
   - component: {fileID: 6871883291708067426}
   - component: {fileID: 303157173558454895}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Scrollbar Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1989,8 +1989,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7843671907541997194}
   m_HandleRect: {fileID: 2956188248250265779}
   m_Direction: 2
-  m_Value: 1.0000074
-  m_Size: 0.34612694
+  m_Value: 1.0000005
+  m_Size: 0.33333272
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2006,7 +2006,7 @@ GameObject:
   - component: {fileID: 5892668672756868943}
   - component: {fileID: 5353648003318278734}
   - component: {fileID: 7265438040830317101}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2069,8 +2069,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2140,7 +2140,7 @@ GameObject:
   - component: {fileID: 727205328721554889}
   - component: {fileID: 2471407666611188081}
   - component: {fileID: 667578694093866445}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2203,8 +2203,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2276,7 +2276,7 @@ GameObject:
   - component: {fileID: 6962656782129536623}
   - component: {fileID: 6128385441694026573}
   - component: {fileID: 1153165120847413528}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "3.Cevikku\u1E5F\u1E5Fikk\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2291,7 +2291,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5384956735365433153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.003251398}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2301,7 +2301,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2070185739871415791
 CanvasRenderer:
@@ -2423,7 +2423,7 @@ GameObject:
   - component: {fileID: 2513647012526992948}
   - component: {fileID: 2308828669438814630}
   - component: {fileID: 131999111040528253}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2486,8 +2486,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2557,7 +2557,7 @@ GameObject:
   - component: {fileID: 394570213674150134}
   - component: {fileID: 8058799290307401132}
   - component: {fileID: 2098537913847177872}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2620,8 +2620,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2691,7 +2691,7 @@ GameObject:
   - component: {fileID: 1188647027411595189}
   - component: {fileID: 4854163862546836321}
   - component: {fileID: 7159852961846341388}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2754,8 +2754,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2825,7 +2825,7 @@ GameObject:
   - component: {fileID: 3374835781001117198}
   - component: {fileID: 4014117805707716920}
   - component: {fileID: 7424431685912484521}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2888,8 +2888,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3097,8 +3097,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284966759
-  m_fontColor: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3168,7 +3168,7 @@ GameObject:
   - component: {fileID: 5506380515726400361}
   - component: {fileID: 5903947977685068118}
   - component: {fileID: 2774363429429582141}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Content
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3203,7 +3203,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -259.99933, y: 499.98615}
+  m_AnchoredPosition: {x: -259.99936, y: 499.99872}
   m_SizeDelta: {x: 500, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &5903947977685068118
@@ -3224,7 +3224,7 @@ MonoBehaviour:
     m_Top: 50
     m_Bottom: 50
   m_ChildAlignment: 1
-  m_Spacing: 140
+  m_Spacing: 100
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -3257,7 +3257,7 @@ GameObject:
   - component: {fileID: 5274488166542869749}
   - component: {fileID: 2908262415942691019}
   - component: {fileID: 7778855454985902069}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3320,8 +3320,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3389,7 +3389,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3801318409105045846}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Sliding Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3429,7 +3429,7 @@ GameObject:
   - component: {fileID: 6245168165199516669}
   - component: {fileID: 2525096346281773256}
   - component: {fileID: 1963139495840171033}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "6.Tummi  K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3444,7 +3444,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7836421066872064316}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3454,7 +3454,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5506149030679093254
 CanvasRenderer:
@@ -3578,7 +3578,7 @@ GameObject:
   - component: {fileID: 7292271399958889811}
   - component: {fileID: 6636556821222912194}
   - component: {fileID: 3148819496945349214}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "8.A\u1E6Dappa K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3593,7 +3593,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7916056642160631729}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3603,7 +3603,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3987219789031064713
 CanvasRenderer:
@@ -3725,7 +3725,7 @@ GameObject:
   - component: {fileID: 5489228044189433968}
   - component: {fileID: 2607303163537994033}
   - component: {fileID: 7304008848260043778}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3788,8 +3788,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4287269514
-  m_fontColor: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3861,7 +3861,7 @@ GameObject:
   - component: {fileID: 3291438542533826261}
   - component: {fileID: 4632969528999043393}
   - component: {fileID: 3932016945403172909}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "7.N\u0113r Varmam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3876,7 +3876,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8401678641735440084}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3886,7 +3886,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1776636216999461583
 CanvasRenderer:
@@ -4009,7 +4009,7 @@ GameObject:
   - component: {fileID: 3618103814220676856}
   - component: {fileID: 1984655337533263688}
   - component: {fileID: 3010009776473601039}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Viewport
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4161,8 +4161,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284966759
-  m_fontColor: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 1}
+    rgba: 4289901234
+  m_fontColor: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4234,7 +4234,7 @@ GameObject:
   - component: {fileID: 5763341496211860236}
   - component: {fileID: 3261915851974592619}
   - component: {fileID: 5748084683594493935}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: "11.Ci\u1E5Fiya Atti Curukki  K\u0101lam"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4249,7 +4249,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8759277425057991339}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.0037932976}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4259,7 +4259,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3564205261129000474
 CanvasRenderer:

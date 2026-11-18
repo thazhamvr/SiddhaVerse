@@ -43,7 +43,7 @@ public class VarmaSelectionManager : MonoBehaviour
         }
     }
 
-    // Direct methods for the 3 Layer Buttons
+    // Direct methods for the 3 Layer Buttons (stages selection only; waits for View button)
     public void StageSkinLayer()
     {
         pendingLayerIndex = 1;
@@ -62,15 +62,18 @@ public class VarmaSelectionManager : MonoBehaviour
     // Triggered by 3D VIEW / VIEW DETAIL Button
     public void CommitView()
     {
-        // 1. Set Anatomy Layer visibility
+        // 1. Set Anatomy Layer visibility based on the staged layer
         if (layerController != null)
         {
-            if (pendingLayerIndex == 1) layerController.SetSkinTransparent();
-            else if (pendingLayerIndex == 2) layerController.SetMuscleTransparent();
-            else if (pendingLayerIndex == 3) layerController.SetBoneTransparent();
+            if (pendingLayerIndex == 1) layerController.SetSkinLayer();
+            else if (pendingLayerIndex == 2) layerController.SetMuscleLayer();
+            else if (pendingLayerIndex == 3) layerController.SetBoneLayer();
         }
 
-        // 2. Activate selected Varma Point sphere
+        // Diagnostic check to verify list count and selected index
+        Debug.Log("CommitView -> patuPoints count: " + (patuPoints != null ? patuPoints.Count : 0) + " | pendingPointIndex: " + pendingPointIndex);
+
+        // 2. Activate selected Varma Point sphere and send data to Canvas_Right_Data
         if (patuPoints == null || patuPoints.Count == 0 || pendingPointIndex == -1) return;
 
         foreach (VarmaPointSender point in patuPoints)
