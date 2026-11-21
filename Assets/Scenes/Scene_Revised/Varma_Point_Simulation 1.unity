@@ -2997,7 +2997,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 386ef63ef932ed34fa92984bc05a4323, type: 2}
+  sharedProfile: {fileID: 11400000, guid: fbf4e5d9a5550a84aaf9239e8254f6fa, type: 2}
 --- !u!4 &809977137
 Transform:
   m_ObjectHideFlags: 0
@@ -12887,7 +12887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5506380515726400361, guid: 358e9ec617452784db3c7ed7896f7fba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 499.9996
+      value: 499.99945
       objectReference: {fileID: 0}
     - target: {fileID: 5743384984694847684, guid: 358e9ec617452784db3c7ed7896f7fba, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13361,26 +13361,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 56836727960658704, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_RaycastMask.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 56836727960658704, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_InteractionLayers.m_Bits
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 122084618895949332, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1159647137789394654, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_RaycastMask.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 3777350745016716439, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1799369692}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -13421,85 +13401,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: layerController
-      value: 
-      objectReference: {fileID: 1799369692}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 338301360}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 649742064}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 318021095}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[3]
-      value: 
-      objectReference: {fileID: 96804296}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[4]
-      value: 
-      objectReference: {fileID: 1554313986}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[5]
-      value: 
-      objectReference: {fileID: 616640679}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[6]
-      value: 
-      objectReference: {fileID: 741423606}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[7]
-      value: 
-      objectReference: {fileID: 111968248}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[8]
-      value: 
-      objectReference: {fileID: 1398179921}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[9]
-      value: 
-      objectReference: {fileID: 541679606}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[10]
-      value: 
-      objectReference: {fileID: 1925897186}
-    - target: {fileID: 4496967610612117652, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: patuPoints.Array.data[11]
-      value: 
-      objectReference: {fileID: 36288177}
-    - target: {fileID: 4937208665121188599, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1799369692}
     - target: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
       propertyPath: m_Name
       value: XR Interaction Setup
       objectReference: {fileID: 0}
-    - target: {fileID: 7313654230448209575, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7494280113778447788, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: rightDataCanvas
-      value: 
-      objectReference: {fileID: 8857377088362088897}
-    - target: {fileID: 7696548424635294051, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.232
-      objectReference: {fileID: 0}
-    - target: {fileID: 8361177685162541377, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1799369692}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: -8461614130480692942, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 895f6f3c2d334633b5800312285058d2, type: 3}
