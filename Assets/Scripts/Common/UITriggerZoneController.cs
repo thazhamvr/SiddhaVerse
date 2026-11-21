@@ -2,18 +2,15 @@ using UnityEngine;
 
 public class UITriggerZoneController : MonoBehaviour
 {
-    [Header("WorldSpace UI Panels to Toggle")]
-    [Tooltip("Drag Canvas_FarLeft_Toggles, Canvas_Left_Anatomy, Canvas_Right_Data, etc. here")]
-    public GameObject[] worldSpaceUIPanels;
+    [Header("3 Side WorldSpace Canvases (Do NOT include Top_Bar_Canvas)")]
+    [Tooltip("Drag Canvas_FarLeft_Toggles, Canvas_Left_Anatomy, and Canvas_Right_Data here")]
+    public GameObject[] sideUICanvases;
 
     [Header("Player Detection")]
-    [Tooltip("Drag your XR Origin (XR Rig) or Main Camera here so the trigger detects the player")]
+    [Tooltip("Drag your XR Origin (XR Rig) here")]
     public Transform playerHeadOrRig;
 
-    [Header("Initial States")]
-    [Tooltip("Set true if Varmam mode starts active, or false if the user must press the Varmam button first")]
-    public bool isVarmamModeActive = false;
-
+    private bool isVarmamModeActive = false;
     private bool isPlayerInsideZone = false;
 
     void Start()
@@ -21,14 +18,14 @@ public class UITriggerZoneController : MonoBehaviour
         RefreshUIVisibility();
     }
 
-    // Hook this to your Top_Bar_Canvas "VARMAM" button OnClick() (toggles ON/OFF)
+    // Hook this to the "VARMAM" button on Top_Bar_Canvas -> OnClick()
     public void ToggleVarmamMode()
     {
         isVarmamModeActive = !isVarmamModeActive;
         RefreshUIVisibility();
     }
 
-    // Optional: Use these if your TopBarUIManager explicitly opens/closes Varmam mode
+    // Explicit setter used by TabletNavigationManager or TopBarUIManager
     public void SetVarmamMode(bool active)
     {
         isVarmamModeActive = active;
@@ -58,18 +55,17 @@ public class UITriggerZoneController : MonoBehaviour
         if (playerHeadOrRig == null)
             return other.CompareTag("Player") || other.CompareTag("MainCamera");
 
-        // Matches if the collider belongs to XR Origin, Camera Offset, or Main Camera
         return other.transform == playerHeadOrRig || other.transform.IsChildOf(playerHeadOrRig);
     }
 
-    // Master Rule: UI is ONLY visible when Varmam Mode is ON AND Player is inside the TV zone
+    // Shows the 3 side canvases ONLY when Varmam is toggled ON AND Player is in front of the TV
     private void RefreshUIVisibility()
     {
         bool shouldShow = isVarmamModeActive && isPlayerInsideZone;
 
-        if (worldSpaceUIPanels == null) return;
+        if (sideUICanvases == null) return;
 
-        foreach (GameObject panel in worldSpaceUIPanels)
+        foreach (GameObject panel in sideUICanvases)
         {
             if (panel != null)
             {

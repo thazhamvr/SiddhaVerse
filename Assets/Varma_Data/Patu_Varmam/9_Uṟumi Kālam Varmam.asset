@@ -19,3 +19,4 @@ MonoBehaviour:
     sugar regulation)."
   anatomyImage: {fileID: 21300000, guid: 4e0f3bcb000b9a4498bc5a652f9414fa, type: 3}
   classification: 0
+  descriptionAudio: {fileID: 8300000, guid: 599e66ad77f07e64b9573ab326390454, type: 3}

@@ -22,3 +22,4 @@ MonoBehaviour:
     the legs)."
   anatomyImage: {fileID: 21300000, guid: 37026fcdbb66bfe4f895e66db5b1419b, type: 3}
   classification: 0
+  descriptionAudio: {fileID: 8300000, guid: 9f60c0828f06d964c89dbebe09b74caf, type: 3}

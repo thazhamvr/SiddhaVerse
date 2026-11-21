@@ -20,3 +20,4 @@ MonoBehaviour:
     eye nerves),  M\u0101\u1E5Fuka\u1E47 ku\u1E47ama\u1E6Daiyum (helps improve strabismus)."
   anatomyImage: {fileID: 21300000, guid: 958394b9441a04e4592f0f68289a0d7e, type: 3}
   classification: 0
+  descriptionAudio: {fileID: 8300000, guid: c824a18d724a5784ebcc45188e59a312, type: 3}

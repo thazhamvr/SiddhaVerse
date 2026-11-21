@@ -1,76 +1,72 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TabletNavigationManager : MonoBehaviour
 {
     [Header("TV Monitor Panels")]
-    [Tooltip("Drag Start_Panel here")]
-    public GameObject startPanel;
+    public GameObject startPanel;    // Start_Panel
+    public GameObject uiActivePanel; // UI_Active_panel
 
-    [Tooltip("Drag Home_Panel here")]
-    public GameObject homePanel;
+    [Header("UI_Active_panel Buttons")]
+    public Button paduVarmamButton;   // Padu_Btn
+    public Button thoduVarmamButton;  // Thodu_Btn (1) - locked for now
 
-    [Tooltip("Drag Patu_Panel here")]
-    public GameObject patuPanel;
+    [Header("Top Bar Canvas (Spawns on Padu Varmam)")]
+    [Tooltip("Drag ONLY Top_Bar_Canvas here")]
+    public GameObject topBarCanvas;
 
-    [Tooltip("Drag ViewDetail_Panel here")]
-    public GameObject viewDetailPanel;
-
-    [Header("External Side Canvases")]
-    [Tooltip("Drag Canvas_Left_Anatomy or Canvas_Right_Data here")]
-    public GameObject rightDataCanvas;
+    [Header("Trigger Zone Controller (Controls the 3 Side Canvases)")]
+    [Tooltip("Drag TV_UI_TriggerZone here so the 3 side canvases stay hidden until Varmam is clicked")]
+    public UITriggerZoneController triggerZoneController;
 
     void Start()
     {
-        ShowStartPanel();
-    }
+        // 1. Hide Top_Bar_Canvas at startup
+        if (topBarCanvas != null) topBarCanvas.SetActive(false);
 
-    // Called by START Button on Start_Panel
-    public void ShowStartPanel()
-    {
-        HideAllPanels();
+        // 2. Ensure Varmam mode starts OFF so the 3 side canvases stay hidden
+        if (triggerZoneController != null)
+        {
+            triggerZoneController.SetVarmamMode(false);
+        }
+
+        // 3. Show Start_Panel and hide UI_Active_panel initially
         if (startPanel != null) startPanel.SetActive(true);
-        if (rightDataCanvas != null) rightDataCanvas.SetActive(false);
+        if (uiActivePanel != null) uiActivePanel.SetActive(false);
+
+        // 4. Lock Thodu Varmam button and keep Padu Varmam unlocked
+        if (thoduVarmamButton != null) thoduVarmamButton.interactable = false;
+        if (paduVarmamButton != null) paduVarmamButton.interactable = true;
     }
 
-    // Called by BACK Button or Home Button
-    public void ShowHomePanel()
-    {
-        HideAllPanels();
-        if (homePanel != null) homePanel.SetActive(true);
-        if (rightDataCanvas != null) rightDataCanvas.SetActive(false);
-    }
-
-    // Called by PATU VARMAM Button on Home_Panel
-    public void ShowPatuVarmamPanel()
-    {
-        HideAllPanels();
-        if (patuPanel != null) patuPanel.SetActive(true);
-        if (rightDataCanvas != null) rightDataCanvas.SetActive(true);
-    }
-
-    // Called by VIEW DETAIL Button on Patu_Panel
-    public void ShowViewDetailPanel()
-    {
-        HideAllPanels();
-        if (viewDetailPanel != null) viewDetailPanel.SetActive(true);
-        if (rightDataCanvas != null) rightDataCanvas.SetActive(true);
-    }
-
-    private void HideAllPanels()
+    // Hook to START button inside Start_Panel -> OnClick()
+    public void OnStartButtonPressed()
     {
         if (startPanel != null) startPanel.SetActive(false);
-        if (homePanel != null) homePanel.SetActive(false);
-        if (patuPanel != null) patuPanel.SetActive(false);
-        if (viewDetailPanel != null) viewDetailPanel.SetActive(false);
+        if (uiActivePanel != null) uiActivePanel.SetActive(true);
     }
 
-    public void QuitApplication()
+    // Hook to Padu_Btn inside UI_Active_panel -> OnClick()
+    public void OnPaduVarmamPressed()
     {
-        Debug.Log("Quitting Application...");
-        Application.Quit();
+        // Spawn ONLY Top_Bar_Canvas first; the 3 side panels wait for the Varmam button
+        if (topBarCanvas != null)
+        {
+            topBarCanvas.SetActive(true);
+        }
+    }
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
+    // Optional: Return to Start_Panel and hide all WorldSpace UI
+    public void ResetToStart()
+    {
+        if (topBarCanvas != null) topBarCanvas.SetActive(false);
+
+        if (triggerZoneController != null)
+        {
+            triggerZoneController.SetVarmamMode(false);
+        }
+
+        if (startPanel != null) startPanel.SetActive(true);
+        if (uiActivePanel != null) uiActivePanel.SetActive(false);
     }
 }

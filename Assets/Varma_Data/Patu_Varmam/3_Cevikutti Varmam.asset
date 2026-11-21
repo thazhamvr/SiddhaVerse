@@ -23,3 +23,4 @@ MonoBehaviour:
     intellect, and ego). "
   anatomyImage: {fileID: 21300000, guid: b72d91a8a5e2a664c9d01a4df4b4375d, type: 3}
   classification: 0
+  descriptionAudio: {fileID: 8300000, guid: a498aeb002c4d95498c9e9cc761d24c9, type: 3}

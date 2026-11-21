@@ -20,3 +20,4 @@ MonoBehaviour:
     relieve respiratory difficulties)."
   anatomyImage: {fileID: 21300000, guid: 5cf7b01d9bf6f3140a6ecb966cf2e740, type: 3}
   classification: 0
+  descriptionAudio: {fileID: 8300000, guid: 7fa2af4483bac274aa0ac0b993c8c61f, type: 3}

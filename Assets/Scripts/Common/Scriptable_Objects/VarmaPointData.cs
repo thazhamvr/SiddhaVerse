@@ -13,4 +13,7 @@ public class VarmaPointData : ScriptableObject
 
     public enum VarmamClassification { Patu, Totu }
     public VarmamClassification classification;
+
+    [Header("Audio Guide")]
+    public AudioClip descriptionAudio;
 }

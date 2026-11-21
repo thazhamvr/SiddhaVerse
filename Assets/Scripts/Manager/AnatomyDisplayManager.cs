@@ -14,15 +14,42 @@ public class AnatomyDisplayManager : MonoBehaviour
     public TextMeshProUGUI detailedInfoText;
 
     [Header("Main Tab Display & Image")]
-    public TextMeshProUGUI sectionHeaderText; // Dynamic_text (1) -> displays "DESCRIPTION" or "LOCATION"
-    public TextMeshProUGUI descriptionText;   // Dynamic_text -> displays description or location body text
+    public TextMeshProUGUI sectionHeaderText; // Dynamic_text (1) -> "DESCRIPTION" or "LOCATION"
+    public TextMeshProUGUI descriptionText;   // Dynamic_text -> description or location body text
     public Image anatomyImageRef;
 
+    [Header("ElevenLabs Audio Guide")]
+    [Tooltip("Add an AudioSource component to Canvas_Right_Data and drag it here")]
+    public AudioSource narrationAudioSource;
+    [Tooltip("Optional: Drag the Audio Guide button's Text (TMP) here to toggle label between Play/Stop")]
+    public TextMeshProUGUI audioButtonLabel;
+
     private VarmaPointData currentData;
+
+    void Update()
+    {
+        // Automatically reset button text when the ElevenLabs audio clip finishes playing
+        if (narrationAudioSource != null && !narrationAudioSource.isPlaying && audioButtonLabel != null)
+        {
+            if (audioButtonLabel.text == "STOP AUDIO")
+            {
+                audioButtonLabel.text = "AUDIO GUIDE";
+            }
+        }
+    }
+
+    void OnDisable()
+    {
+        // Stop audio automatically if the user walks out of the TV trigger zone or closes the UI
+        StopAudio();
+    }
 
     public void DisplayVarmaData(VarmaPointData data)
     {
         if (data == null) return;
+
+        // Stop previous point's audio when loading a newly selected Varmam point
+        StopAudio();
 
         currentData = data;
 
@@ -72,5 +99,39 @@ public class AnatomyDisplayManager : MonoBehaviour
 
         if (descriptionText != null)
             descriptionText.text = currentData.location;
+    }
+
+    // Hook to the AUDIO GUIDE button at the bottom-left of Canvas_Right_Data -> OnClick()
+    public void ToggleDescriptionAudio()
+    {
+        if (narrationAudioSource == null || currentData == null || currentData.descriptionAudio == null)
+        {
+            Debug.LogWarning("Missing AudioSource or Description Audio clip for this Varmam point.");
+            return;
+        }
+
+        if (narrationAudioSource.isPlaying)
+        {
+            StopAudio();
+        }
+        else
+        {
+            narrationAudioSource.clip = currentData.descriptionAudio;
+            narrationAudioSource.Play();
+
+            if (audioButtonLabel != null)
+                audioButtonLabel.text = "STOP AUDIO";
+        }
+    }
+
+    public void StopAudio()
+    {
+        if (narrationAudioSource != null && narrationAudioSource.isPlaying)
+        {
+            narrationAudioSource.Stop();
+        }
+
+        if (audioButtonLabel != null)
+            audioButtonLabel.text = "AUDIO GUIDE";
     }
 }

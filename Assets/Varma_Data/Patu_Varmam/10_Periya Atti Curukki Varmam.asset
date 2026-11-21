@@ -20,3 +20,4 @@ MonoBehaviour:
     cells)."
   anatomyImage: {fileID: 21300000, guid: 052a3c7b9af8a5d4fb5218d82de305f5, type: 3}
   classification: 0
+  descriptionAudio: {fileID: 8300000, guid: eb6ef0d458636fd42b7f72da5728d159, type: 3}
