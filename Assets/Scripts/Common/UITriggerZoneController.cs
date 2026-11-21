@@ -3,8 +3,9 @@ using UnityEngine;
 public class UITriggerZoneController : MonoBehaviour
 {
     [Header("3 Side WorldSpace Canvases (Do NOT include Top_Bar_Canvas)")]
-    [Tooltip("Drag Canvas_FarLeft_Toggles, Canvas_Left_Anatomy, and Canvas_Right_Data here")]
-    public GameObject[] sideUICanvases;
+    public GameObject farLeftPointsCanvas;   // Canvas_FarLeft_Toggles
+    public GameObject leftAnatomyCanvas;     // Canvas_Left_Anatomy
+    public GameObject rightDataCanvas;       // Canvas_Right_Data
 
     [Header("Player Detection")]
     [Tooltip("Drag your XR Origin (XR Rig) here")]
@@ -12,6 +13,9 @@ public class UITriggerZoneController : MonoBehaviour
 
     private bool isVarmamModeActive = false;
     private bool isPlayerInsideZone = false;
+
+    // 0 = Not started, 1 = Point selection visible, 2 = Layer selection visible, 3 = All 3 visible
+    private int currentFlowStep = 0;
 
     void Start()
     {
@@ -21,15 +25,55 @@ public class UITriggerZoneController : MonoBehaviour
     // Hook this to the "VARMAM" button on Top_Bar_Canvas -> OnClick()
     public void ToggleVarmamMode()
     {
-        isVarmamModeActive = !isVarmamModeActive;
-        RefreshUIVisibility();
+        SetVarmamMode(!isVarmamModeActive);
     }
 
-    // Explicit setter used by TabletNavigationManager or TopBarUIManager
+    // Called by TabletNavigationManager or Top_Bar_Canvas
     public void SetVarmamMode(bool active)
     {
         isVarmamModeActive = active;
+
+        if (isVarmamModeActive && currentFlowStep == 0)
+        {
+            StartStep1_PointSelection();
+        }
+        else if (!isVarmamModeActive)
+        {
+            currentFlowStep = 0;
+        }
+
         RefreshUIVisibility();
+    }
+
+    // STEP 1: Reveal Canvas_FarLeft_Toggles in its exact original place
+    public void StartStep1_PointSelection()
+    {
+        currentFlowStep = 1;
+        RefreshUIVisibility();
+    }
+
+    // STEP 2: Reveal Canvas_Left_Anatomy when a Varmam point is selected
+    public void AdvanceToStep2_LayerSelection()
+    {
+        if (!isVarmamModeActive) return;
+
+        if (currentFlowStep == 1)
+        {
+            currentFlowStep = 2;
+            RefreshUIVisibility();
+        }
+    }
+
+    // STEP 3: Reveal Canvas_Right_Data when an Anatomy Layer is selected
+    public void AdvanceToStep3_DataAndView()
+    {
+        if (!isVarmamModeActive) return;
+
+        if (currentFlowStep == 2)
+        {
+            currentFlowStep = 3;
+            RefreshUIVisibility();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -58,19 +102,17 @@ public class UITriggerZoneController : MonoBehaviour
         return other.transform == playerHeadOrRig || other.transform.IsChildOf(playerHeadOrRig);
     }
 
-    // Shows the 3 side canvases ONLY when Varmam is toggled ON AND Player is in front of the TV
     private void RefreshUIVisibility()
     {
-        bool shouldShow = isVarmamModeActive && isPlayerInsideZone;
+        bool canShowAny = isVarmamModeActive && isPlayerInsideZone && currentFlowStep > 0;
 
-        if (sideUICanvases == null) return;
+        if (farLeftPointsCanvas != null)
+            farLeftPointsCanvas.SetActive(canShowAny && currentFlowStep >= 1);
 
-        foreach (GameObject panel in sideUICanvases)
-        {
-            if (panel != null)
-            {
-                panel.SetActive(shouldShow);
-            }
-        }
+        if (leftAnatomyCanvas != null)
+            leftAnatomyCanvas.SetActive(canShowAny && currentFlowStep >= 2);
+
+        if (rightDataCanvas != null)
+            rightDataCanvas.SetActive(canShowAny && currentFlowStep >= 3);
     }
 }

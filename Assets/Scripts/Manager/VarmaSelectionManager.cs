@@ -15,8 +15,26 @@ public class VarmaSelectionManager : MonoBehaviour
     [Header("External Layer Controller")]
     public AnatomyLayerController layerController;
 
+    [Header("Sequential UI Flow Controller")]
+    [Tooltip("Drag TV_UI_TriggerZone here so picking a point or layer advances the 3-panel flow")]
+    public UITriggerZoneController uiFlowController;
+
+    [Header("One-Time View Button")]
+    [Tooltip("Drag the View button GameObject from Canvas_Right_Data here so it disables after first use")]
+    public GameObject viewButtonObject;
+
     private int pendingPointIndex = -1;
     private int pendingLayerIndex = 1; // 1 = Skin, 2 = Muscle/Nerve, 3 = Skeleton
+    private bool hasUsedInitialView = false;
+
+    void Start()
+    {
+        hasUsedInitialView = false;
+        if (viewButtonObject != null)
+        {
+            viewButtonObject.SetActive(true);
+        }
+    }
 
     // Triggered by each individual Varma Point button in the ScrollView (Pass 0 for Point 1, 1 for Point 2, etc.)
     public void StagePoint(int buttonIndex)
@@ -31,6 +49,18 @@ public class VarmaSelectionManager : MonoBehaviour
                 {
                     varmamNameText.text = patuPoints[buttonIndex].myDataCard.pointName;
                 }
+
+                // Advance sequential UI flow: spawn Anatomy Layer panel
+                if (uiFlowController != null)
+                {
+                    uiFlowController.AdvanceToStep2_LayerSelection();
+                }
+
+                // After the initial View button has been used once, update the 3D point & data immediately
+                if (hasUsedInitialView)
+                {
+                    ApplyPointAndLayerSelection();
+                }
             }
             else
             {
@@ -43,35 +73,62 @@ public class VarmaSelectionManager : MonoBehaviour
         }
     }
 
-    // Direct methods for the 3 Layer Buttons (stages selection only; waits for View button)
+    // Direct methods for the 3 Layer Buttons on Canvas_Left_Anatomy
     public void StageSkinLayer()
     {
         pendingLayerIndex = 1;
+        OnLayerSelected();
     }
 
     public void StageMuscleNerveLayer()
     {
         pendingLayerIndex = 2;
+        OnLayerSelected();
     }
 
     public void StageSkeletonLayer()
     {
         pendingLayerIndex = 3;
+        OnLayerSelected();
     }
 
-    // Triggered by 3D VIEW / VIEW DETAIL Button
+    private void OnLayerSelected()
+    {
+        if (uiFlowController != null)
+        {
+            uiFlowController.AdvanceToStep3_DataAndView();
+        }
+
+        // After the View button has been used once, selecting a layer immediately updates the model & point
+        if (hasUsedInitialView)
+        {
+            ApplyPointAndLayerSelection();
+        }
+    }
+
+    // Triggered by the View button on Canvas_Right_Data (used ONCE on the first selection)
     public void CommitView()
     {
-        // 1. Set Anatomy Layer visibility based on the staged layer
+        hasUsedInitialView = true;
+
+        // Disable the View button after its first use
+        if (viewButtonObject != null)
+        {
+            viewButtonObject.SetActive(false);
+        }
+
+        ApplyPointAndLayerSelection();
+    }
+
+    private void ApplyPointAndLayerSelection()
+    {
+        // 1. Set Anatomy Layer visibility based on the selected layer
         if (layerController != null)
         {
             if (pendingLayerIndex == 1) layerController.SetSkinLayer();
             else if (pendingLayerIndex == 2) layerController.SetMuscleLayer();
             else if (pendingLayerIndex == 3) layerController.SetBoneLayer();
         }
-
-        // Diagnostic check to verify list count and selected index
-        Debug.Log("CommitView -> patuPoints count: " + (patuPoints != null ? patuPoints.Count : 0) + " | pendingPointIndex: " + pendingPointIndex);
 
         // 2. Activate selected Varma Point sphere and send data to Canvas_Right_Data
         if (patuPoints == null || patuPoints.Count == 0 || pendingPointIndex == -1) return;

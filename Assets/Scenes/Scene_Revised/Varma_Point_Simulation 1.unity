@@ -1795,10 +1795,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83aaed3973def8547a527d7053007fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sideUICanvases:
-  - {fileID: 8857377088362088897}
-  - {fileID: 6465671391531363726}
-  - {fileID: 699304576}
+  farLeftPointsCanvas: {fileID: 699304576}
+  leftAnatomyCanvas: {fileID: 6465671391531363726}
+  rightDataCanvas: {fileID: 8857377088362088897}
   playerHeadOrRig: {fileID: 48863408}
 --- !u!65 &529991380
 BoxCollider:
@@ -2914,10 +2913,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
+  m_fontSize: 72
   m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -5578,6 +5577,8 @@ MonoBehaviour:
   - {fileID: 36288177}
   varmamNameText: {fileID: 322511475}
   layerController: {fileID: 1799369692}
+  uiFlowController: {fileID: 529991379}
+  viewButtonObject: {fileID: 1812464753005586882}
 --- !u!1 &1233367729
 GameObject:
   m_ObjectHideFlags: 0
@@ -12887,7 +12888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5506380515726400361, guid: 358e9ec617452784db3c7ed7896f7fba, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 499.99945
+      value: 499.999
       objectReference: {fileID: 0}
     - target: {fileID: 5743384984694847684, guid: 358e9ec617452784db3c7ed7896f7fba, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
