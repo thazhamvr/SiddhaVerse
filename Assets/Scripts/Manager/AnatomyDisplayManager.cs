@@ -26,6 +26,15 @@ public class AnatomyDisplayManager : MonoBehaviour
 
     private VarmaPointData currentData;
 
+    void Awake()
+    {
+        if (narrationAudioSource != null)
+        {
+            narrationAudioSource.playOnAwake = false;
+            narrationAudioSource.clip = null;
+        }
+    }
+
     void Update()
     {
         // Automatically reset button text when the ElevenLabs audio clip finishes playing
@@ -40,7 +49,7 @@ public class AnatomyDisplayManager : MonoBehaviour
 
     void OnDisable()
     {
-        // Stop audio automatically if the user walks out of the TV trigger zone or closes the UI
+        // Stop and clear audio when walking out of the TV trigger zone or closing the UI
         StopAudio();
     }
 
@@ -126,9 +135,13 @@ public class AnatomyDisplayManager : MonoBehaviour
 
     public void StopAudio()
     {
-        if (narrationAudioSource != null && narrationAudioSource.isPlaying)
+        if (narrationAudioSource != null)
         {
-            narrationAudioSource.Stop();
+            if (narrationAudioSource.isPlaying)
+            {
+                narrationAudioSource.Stop();
+            }
+            narrationAudioSource.clip = null;
         }
 
         if (audioButtonLabel != null)
