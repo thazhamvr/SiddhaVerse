@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UI;
 
 public class VarmaSelectionManager : MonoBehaviour
 {
@@ -23,6 +24,14 @@ public class VarmaSelectionManager : MonoBehaviour
     [Tooltip("Drag the View button GameObject from Canvas_Right_Data here so it disables after first use")]
     public GameObject viewButtonObject;
 
+    [Header("Persistent Selected Button Sprites (Optional)")]
+    [Tooltip("Assign the 12 Varmam point button Images in order (0 to 11)")]
+    public Image[] pointButtonImages;
+    [Tooltip("Assign the 3 Layer button Images in order: 0 = Skin, 1 = Muscle/Nerve, 2 = Skeleton")]
+    public Image[] layerButtonImages;
+    public Sprite unselectedButtonSprite; // e.g., btn_action_190x70_normal
+    public Sprite activeSelectedSprite;   // e.g., btn_action_primary_190x70_normal
+
     private int pendingPointIndex = -1;
     private int pendingLayerIndex = 1; // 1 = Skin, 2 = Muscle/Nerve, 3 = Skeleton
     private bool hasUsedInitialView = false;
@@ -42,6 +51,7 @@ public class VarmaSelectionManager : MonoBehaviour
         if (buttonIndex >= 0 && buttonIndex < patuPoints.Count)
         {
             pendingPointIndex = buttonIndex;
+            HighlightActiveButton(pointButtonImages, buttonIndex);
 
             if (patuPoints[buttonIndex] != null && patuPoints[buttonIndex].myDataCard != null)
             {
@@ -77,18 +87,21 @@ public class VarmaSelectionManager : MonoBehaviour
     public void StageSkinLayer()
     {
         pendingLayerIndex = 1;
+        HighlightActiveButton(layerButtonImages, 0);
         OnLayerSelected();
     }
 
     public void StageMuscleNerveLayer()
     {
         pendingLayerIndex = 2;
+        HighlightActiveButton(layerButtonImages, 1);
         OnLayerSelected();
     }
 
     public void StageSkeletonLayer()
     {
         pendingLayerIndex = 3;
+        HighlightActiveButton(layerButtonImages, 2);
         OnLayerSelected();
     }
 
@@ -144,6 +157,19 @@ public class VarmaSelectionManager : MonoBehaviour
             selectedPoint.SetVisible(true);
             selectedPoint.StartBlinking();
             selectedPoint.SendData();
+        }
+    }
+
+    private void HighlightActiveButton(Image[] buttonImages, int activeIndex)
+    {
+        if (buttonImages == null || unselectedButtonSprite == null || activeSelectedSprite == null) return;
+
+        for (int i = 0; i < buttonImages.Length; i++)
+        {
+            if (buttonImages[i] != null)
+            {
+                buttonImages[i].sprite = (i == activeIndex) ? activeSelectedSprite : unselectedButtonSprite;
+            }
         }
     }
 }

@@ -56,9 +56,10 @@ public class TabletNavigationManager : MonoBehaviour
         }
     }
 
-    // Optional: Return to Start_Panel and hide all WorldSpace UI
-    public void ResetToStart()
+    // Hook to the Back button inside UI_Active_panel -> OnClick()
+    public void OnBackButtonPressed()
     {
+        // Hide Top_Bar_Canvas and reset Varmam mode so all 3 side canvases close cleanly
         if (topBarCanvas != null) topBarCanvas.SetActive(false);
 
         if (triggerZoneController != null)
@@ -66,7 +67,22 @@ public class TabletNavigationManager : MonoBehaviour
             triggerZoneController.SetVarmamMode(false);
         }
 
-        if (startPanel != null) startPanel.SetActive(true);
+        // Return to Start_Panel
         if (uiActivePanel != null) uiActivePanel.SetActive(false);
+        if (startPanel != null) startPanel.SetActive(true);
+    }
+
+    // Hook to Exit_Btn (QUIT) inside Start_Panel -> OnClick()
+    public void OnQuitButtonPressed()
+    {
+        Debug.Log("Quitting SiddhaVerse application...");
+
+#if UNITY_EDITOR
+        // Stops Play Mode when testing inside the Unity Editor
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+        // Exits cleanly on both Meta Quest standalone (.apk) and Windows PC VR (.exe)
+        Application.Quit();
+#endif
     }
 }
